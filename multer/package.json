@@ -1,0 +1,19 @@
+{
+  "name": "expres-upload-test",
+  "description": "simple form upload test",
+  "version": "0.1.0",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.8.0",
+    "http": "0.0.0",
+    "memorystorage": "^0.11.0",
+    "multer": "^1.3.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "engines": {
+    "node": "0.10.x",
+    "npm": ">1.4.0"
+  }
+}

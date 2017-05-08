@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#imagen{
+  width: 106vh;
+  height: 80vh;
+  margin: auto;
+  display: table-cell;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+function getNewImage(){
+	//$.get("http://10.105.231.23:8080/buffer", function(data, status){ 
+		//document.getElementById("imagen").src = "http://200.5.235.51:8090/buffer";
+	//        });
+	$("#imagen").attr("src", "http://200.5.235.51:8090/buffer?timestamp=" + new Date().getTime());
+}
+
+setInterval(getNewImage, 300);
+</script>
+</head>
+<body>
+<img id="imagen" src="" alt="webcam">
+</body>
+</html>
